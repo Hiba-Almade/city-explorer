@@ -64,4 +64,8 @@ ___
     Finish time: 10/8/2021 
 
     Actual time needed to complete: 1day
+    
+ ---
+ trello link: https://trello.com/b/rOz0KWet
+ netlify link: https://romantic-jennings-4e9391.netlify.app/
 
