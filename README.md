@@ -30,4 +30,38 @@ Bootstrap
 08-08-2021 6:59pm - Awebsite now has a full communicat with a map API 
 
 ## Credit and Collaborations
-ASAC Tranning
+ASAC Tranning 
+
+
+## Features:
+
+* Name of feature: Create React APP
+    
+    Estimate of time needed to complete: 1hr
+
+    Start time: 8/8/2021 3:00pm
+
+    Finish time: 8/8/2021 4:00pm
+
+    Actual time needed to complete: 1hr
+
+___
+* Name of feature: Coniction with location qi API
+
+    Estimate of time needed to complete: 4hr
+
+    Start time: 8/8/2021 5:00pm
+
+    Finish time: 8/8/2021 10:00pm
+
+    Actual time needed to complete: 5hr
+---
+* Name of feature: coniction with waether API 
+    Estimate of time needed to complete: 1day
+
+    Start time: 9/8/2021 
+
+    Finish time: 10/8/2021 
+
+    Actual time needed to complete: 1day
+

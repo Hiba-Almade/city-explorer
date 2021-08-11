@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import City from './component/City';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Weather from './component/Weather';
 
 export class App extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ export class App extends Component {
       img: "",
       handleRender: false,
       errorMsg: false,
-      wetherArr: []
+      weatherArr: []
     }
   }
 
@@ -39,11 +40,15 @@ export class App extends Component {
           handleRender: true
         })
       }).then(() => {
-        let wetherUrl = `${process.env.REACT_APP_SERVER_URL}/cityname=${cityName}&lat=${lat}&lon=${lon}`
-        axios.get(wetherUrl).then(res => {
+        let cityName = this.state.cityName.split(',')[0]
+        let weatherUrl = `http://localhost:3001/weather?cityname=${cityName}&lat=${this.state.lat}&lon=${this.state.lon}`
+        axios.get(weatherUrl).then(res => {
+          console.log(res.data)
           this.setState({
-            wetherArr: res.data
+            weatherArr: res.data
+        
           })
+          console.log(this.state.weatherArr)
         })
       })
 
@@ -61,7 +66,8 @@ export class App extends Component {
           <input type="text" onChange={(e) => { this.getUserInputHandler(e) }} placeholder="Search by City name" class="form-control col-6" />
           <input type="submit" value="Explore!" class="btn btn-primary btn-lg active mx-auto" />
         </form>
-        <City cityName={this.state.cityName} lat={this.state.lat} lon={this.state.lon} img={this.state.img} handleRender={this.state.handleRender} errorMsg={this.state.errorMsg} wetherArr={this.state.wetherArr} />
+        <City cityName={this.state.cityName} lat={this.state.lat} lon={this.state.lon} img={this.state.img} handleRender={this.state.handleRender} errorMsg={this.state.errorMsg} />
+      <Weather weatherArr={this.state.weatherArr} />
       </div>
     )
   }
