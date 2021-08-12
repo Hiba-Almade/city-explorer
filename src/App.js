@@ -28,7 +28,6 @@ export class App extends Component {
     this.setState({
       cityName: e.target.value
     })
-    console.log(this.state.cityName);
   }
 
   submitHandler = (e) => {
