@@ -5,7 +5,7 @@ export class City extends Component {
         return (
             <div>
                
-            {   this.props.handleRender== true &&
+            {   this.props.handleRender === true &&
                 <div class="card border-primary mx-auto" style={{ width: '45rem' }}>
                 <div class="card-body">
                 <h4 class="card-title text-center">{this.props.cityName}</h4>
@@ -14,8 +14,10 @@ export class City extends Component {
                 </div>
                 <img src ={this.props.img} alt = 'map' class="card-img rounded mx-auto d-block" height = "400px"/>
                 </div>
-                }||     
-               { this.props.handleRender== false &&
+                
+               || 
+               
+               this.props.handleRender === false &&
                    <div class="card border-primary mx-auto" style={{ width: '45rem' }}>
                    <div class="card-body">
                    <h4 class="card-title text-center">City Name</h4>
