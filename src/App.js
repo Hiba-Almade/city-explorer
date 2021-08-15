@@ -32,7 +32,7 @@ export class App extends Component {
 
   submitHandler = (e) => {
     e.preventDefault();
-    let url = `https://eu1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_API_KEY}&q=${this.state.cityName}&format=json`
+    let url = `https://eu1.locationiq.com/v1/search.php?key=pk.3bdf6b99a25ebd79aa8617d4d81d3da8&q=${this.state.cityName}&format=json`
     try {
       axios.get(url).then(res => {
         let data = res.data[0]
@@ -40,12 +40,12 @@ export class App extends Component {
           cityName: data.display_name,
           lat: data.lat,
           lon: data.lon,
-          img: `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_API_KEY}&center=${data.lat},${data.lon}`,
+          img: `https://maps.locationiq.com/v3/staticmap?key=pk.3bdf6b99a25ebd79aa8617d4d81d3da8&center=${data.lat},${data.lon}`,
           handleRender: true
         })
 
       }).then(() => {
-        let weatherUrl = `${process.env.REACT_APP_SERVER_URL}/weather?lat=${this.state.lat}&lon=${this.state.lon}`
+        let weatherUrl = `https://city-explorer-301p2.herokuapp.com/weather?lat=${this.state.lat}&lon=${this.state.lon}`
         axios.get(weatherUrl).then(res => {
           console.log(res.data)
           this.setState({
@@ -57,7 +57,7 @@ export class App extends Component {
 
       }).then(() => {
         let city = this.state.cityName.split(',')[0]
-        let movieUrl = `${process.env.REACT_APP_SERVER_URL}/movies?cityname=${city}`
+        let movieUrl = `https://city-explorer-301p2.herokuapp.com/movies?cityname=${city}`
         axios.get(movieUrl).then(res => {
           console.log('movieback' + res.data)
           this.setState({
