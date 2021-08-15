@@ -5,67 +5,91 @@
 
 **Author**: Hiba Almade
 **Version**: 1.0.0
+## Abstract
+This is my first site to use an API My site allows you to search for a specific site and display a set of information about it
 
-## Overview
-This is my first website using the API
-My site enables you to search for a specific location and know its latitude and longitude
-With a map display of the place
-
-## Getting Started
+## start
 If you have experience with React, your first step is to learn how the API works
 
-Then create an account on LocationIQ
+By reading the docs and following the steps, you will get an amazing result
+If you want to try what I built, you just have to open the web link at the bottom of this file
 
-By reading the document and following the steps, you will get an amazing result
+## general engineering
+I can use:
+* HTML
+ * CSS
+ * JS
+* React
+ * Bootstrap
 
-## Architecture
-I use :
-HTML
-CSS 
-JS 
-React
-Bootstrap
+## changelog
+* 08-08-2021 Awebsite now has full connectivity with the map API
+* 09-08-2021 Build a server for the site that displays constant weather data
+* 10-08-2021 Linking the site with APi displays the weather in real and live for the next 16 days
+* 11-08-2021 Now you can also get movies whose name matches the name of the city you are looking for
 
-## Change Log
-08-08-2021 6:59pm - Awebsite now has a full communicat with a map API 
+## credit and cooperation
+* https://my.locationiq.com
 
-## Credit and Collaborations
-ASAC Tranning 
+* https://www.weatherbit.io/api
 
+* https://www.weatherbit.io/api
 
 ## Features:
 
-* Name of feature: Create React APP
-    
-    Estimate of time needed to complete: 1hr
+Feature Name: Create React App
 
-    Start time: 8/8/2021 3:00pm
+Estimated time to complete: 1 hour
 
-    Finish time: 8/8/2021 4:00pm
+Start time: 8/8/2021 3:00 PM
 
-    Actual time needed to complete: 1hr
+End time: 8/8/2021 4:00 PM
 
-___
-* Name of feature: Coniction with location qi API
+Actual time to complete: 1 hour
 
-    Estimate of time needed to complete: 4hr
+--- 
 
-    Start time: 8/8/2021 5:00pm
 
-    Finish time: 8/8/2021 10:00pm
+Feature name: Connection with location qi API
 
-    Actual time needed to complete: 5hr
+Estimated time to complete: 4 hours
+
+Start time: 8/8/2021 5:00 PM
+
+End time: 8/8/2021 10:00 PM
+
+Actual time to complete: 5 hours
+
+--- 
+
+Feature name: coniction with static waether API 
+
+Estimated time to complete: 1 day
+
+Starting time: 9/8/2021
+
+Completion time: 10/8/2021
+
+Actual time to complete: 1 day
+
 ---
-* Name of feature: coniction with waether API 
-    Estimate of time needed to complete: 1day
 
-    Start time: 9/8/2021 
+Feature name: coniction with live waether API & movie Api 
 
-    Finish time: 10/8/2021 
+Estimated time to complete: 1 day
 
-    Actual time needed to complete: 1day
-    
- ---
- trello link: https://trello.com/b/rOz0KWet
- netlify link: https://romantic-jennings-4e9391.netlify.app/
+Starting time: 9/8/2021
+
+Completion time: 10/8/2021
+
+Actual time to complete: 1 day
+
+---- 
+---- 
+
+
+trello link: https://trello.com/b/rOz0KWet 
+
+
+netlify link: https://cityexplorer301d28.netlify.app/
 
